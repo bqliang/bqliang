@@ -12,11 +12,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Full-year calendar
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
           base: ""
           config_timezone: Asia/Shanghai
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          plugin_topics: yes
+          plugin_topics_limit: 12
+          plugin_topics_mode: icons
+          plugin_topics_sort: stars
           token: ${{ secrets.METRICS_TOKEN }}
