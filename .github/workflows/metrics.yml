@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          background: "#ffffff"
-          border_radius: "16px"
           base: ""
           config_timezone: Asia/Shanghai
           plugin_isocalendar: yes
